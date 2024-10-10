@@ -32,3 +32,60 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Toggle for the first abstract
+    const toggleTrigger = document.querySelector('.toggle-trigger-1');
+    const toggleWrap = document.querySelector('.toggle-wrap-1');
+
+    // Initially hide the toggle wrap
+    toggleWrap.style.display = 'none';
+
+    toggleTrigger.addEventListener('click', function() {
+        // Toggle visibility
+        if (toggleWrap.style.display === 'none' || toggleWrap.style.display === '') {
+            toggleWrap.style.display = 'block';
+        } else {
+            toggleWrap.style.display = 'none';
+        }
+    });
+    
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Toggle for the first abstract
+    const toggleTrigger = document.querySelector('.toggle-trigger-2');
+    const toggleWrap = document.querySelector('.toggle-wrap-2');
+
+    // Initially hide the toggle wrap
+    toggleWrap.style.display = 'none';
+
+    toggleTrigger.addEventListener('click', function() {
+        // Toggle visibility
+        if (toggleWrap.style.display === 'none' || toggleWrap.style.display === '') {
+            toggleWrap.style.display = 'block';
+        } else {
+            toggleWrap.style.display = 'none';
+        }
+    });
+    
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Toggle for the first abstract
+    const toggleTrigger = document.querySelector('.toggle-trigger-3');
+    const toggleWrap = document.querySelector('.toggle-wrap-3');
+
+    // Initially hide the toggle wrap
+    toggleWrap.style.display = 'none';
+
+    toggleTrigger.addEventListener('click', function() {
+        // Toggle visibility
+        if (toggleWrap.style.display === 'none' || toggleWrap.style.display === '') {
+            toggleWrap.style.display = 'block';
+        } else {
+            toggleWrap.style.display = 'none';
+        }
+    });
+    
+});
