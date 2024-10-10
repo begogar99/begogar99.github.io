@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Begoña García Malaxechebarría Personal Website</title>
+        <title>Begoña García Malaxechebarría</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -31,6 +33,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">PROJECTS</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">TEACHING</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">AWARDS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#seminars">SEMINARS</a></li>
                 </ul>
             </div>
         </nav>
@@ -47,10 +50,10 @@
                         Fourth year PH.D. student at University of Washington
                     </div>
                     <p class="lead mb-2">I am a Ph.D. student in the Department of Mathematics at the University of Washington, coadvised by
-                    <b>Dmitriy Drusvyatskiy</b> and <b>Courtney Paquette</b>. I am also a member of the Institute for Foundations of Data Science (IFDS).
+                    <a href="https://sites.google.com/uw.edu/ddrusv/home" target="_blank"><b>Dmitriy Drusvyatskiy</b></a> and <a href="https://cypaquette.github.io" target="_blank"><b>Courtney Paquette</b></a>, and a Research Assistant at the Institute for Foundations of Data Science (IFDS).
                     <p class="lead mb-2">My current research focuses on analyzing and scaling limits of stochastic algorithms for large-scale problems in data science. 
                     I employ tools from convex and nonsmooth optimization, high-dimensional probability, and statistics.</p>
-                    <p class="lead mb-5">I completed my undergraduate degree in Mathematics at Universidad de Murcia in 2021, supervised by <b>Ángel Ferrández Izquierdo</b>.</p>
+                    <p class="lead mb-5">I completed my undergraduate degree in Mathematics at Universidad de Murcia in 2021, supervised by <a href="https://webs.um.es/aferr/miwiki/doku.php" target="_blank"><b>Ángel Ferrández Izquierdo</b></a>.</p>
                     <div class="social-icons">
                         <a class="social-icon" href="mailto:begogar9@uw.edu" target="_blank"><i class="fa fa-envelope"></i></a>
                         <a class="social-icon" href="https://linkedin.com/in/begonagarciamalaxechebarria" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -64,24 +67,44 @@
             <section class="resume-section" id="research">
                 <div class="resume-section-content">
                     <h2 class="mb-5">CONFERENCE PROCEEDINGS</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                         <img alt="..." src="assets/img/lineSearchTraceQuotient.png" width="400" height="300"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             <div class="flex-grow-1">
                               <h3 class="mb-0">	The High Line: Exact Risk and Learning Rate Curves of Stochastic Adaptive Learning Rate Algorithms </h3>
-                              <div class="subheading mb-4">Proceedings of  NeurIPS, 2024 &nbsp&nbsp <a href="https://arxiv.org/pdf/2405.19585" target="_blank"> pdf </a></div>
-                              <p>Elizabeth Collins-Woodfin, Inbar Seroussi, <b>Begoña García Malaxechebarría</b>, Andrew W. Mackenzie, Elliot Paquette, Courtney Paquette</p>
+                                <div class="subheading mb-4">Proceedings of  NeurIPS, 2024 &nbsp&nbsp <a href="https://arxiv.org/pdf/2405.19585" target="_blank"> pdf </a> &nbsp <span class="toggle-trigger-1">Abstract</span></div>
+                                <p>Elizabeth Collins-Woodfin, Inbar Seroussi, <b>Begoña García Malaxechebarría</b>, Andrew W. Mackenzie, Elliot Paquette, Courtney Paquette</p>
                             </div>
                     </div>
+                    <div class="toggle-wrap-1">
+                        We develop a framework for analyzing the training and learning rate dynamics on a large class of
+                        high-dimensional optimization problems, which we call the high line, trained using one-pass stochastic
+                        gradient descent (SGD) with adaptive learning rates. We give exact expressions for the risk and learning
+                        rate curves in terms of a deterministic solution to a system of ODEs. We then investigate in detail
+                        two adaptive learning rates &ndash; an idealized exact line search and AdaGrad-Norm &ndash; on the least squares
+                        problem. When the data covariance matrix has strictly positive eigenvalues, this idealized exact line
+                        search strategy can exhibit arbitrarily slower convergence when compared to the optimal fixed learning
+                        rate with SGD. Moreover we exactly characterize the limiting learning rate (as time goes to infinity)
+                        for line search in the setting where the data covariance has only two distinct eigenvalues. For noiseless
+                        targets, we further demonstrate that the AdaGrad-Norm learning rate converges to a deterministic
+                        constant inversely proportional to the average eigenvalue of the data covariance matrix, and identify a
+                        phase transition when the covariance density of eigenvalues follows a power law distribution.
+                    </div>
                     <h2 class="mb-5">JOURNAL PUBLICATIONS</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                         <div class="flex-grow-1">
-                              <h3 class="mb-0">	FULLY-DIVERSE LATTICES FROM RAMIFIED CYCLIC EXTENSIONS OF PRIME DEGREE </h3>
-                              <div class="subheading mb-4">Int. J. Appl. Math. 33(6): 1009-1015, 2020 &nbsp&nbsp <a href="http://diogenes.bg/ijam/contents/2020-33-6/4/4.pdf" target="_blank"> pdf </a></div>
-                              <p>J. Carmelo Interlando, Antonio A. Andrade, <b>Begoña García Malaxechebarría</b>, Agnaldo J. Ferrari, Robson R. de Araújo </p>
+                            <h3 class="mb-0">	FULLY-DIVERSE LATTICES FROM RAMIFIED CYCLIC EXTENSIONS OF PRIME DEGREE </h3>
+                            <div class="subheading mb-4">Int. J. Appl. Math. 33(6): 1009-1015, 2020 &nbsp&nbsp <a href="http://diogenes.bg/ijam/contents/2020-33-6/4/4.pdf" target="_blank"> pdf </a> &nbsp <span class="toggle-trigger-2">Abstract</span></div>
+                            <p>J. Carmelo Interlando, Antonio A. Andrade, <b>Begoña García Malaxechebarría</b>, Agnaldo J. Ferrari, Robson R. de Araújo </p>
                         </div>
                     </div>
+                    <div class="toggle-wrap-2">
+                        Let \(p\) be an odd prime. Algebraic lattices of full diversity in
+                        dimension \(p\) are obtained from ramified cyclic extensions of degree \(p\). The \(3\), \(5\),
+                        and \(7\)-dimensional lattices are optimal with respect to sphere packing density
+                        and therefore are isometric to laminated lattices in those dimensions.
+                    </div>
                     <h2 class="mb-5">THESES</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                         <div class="flex-grow-1">
                                 <h3 class="mb-0">	A separable Banach lattice that contains isometric copies of all others </h3>
                                 <div class="subheading mb-4"> UNDERGRADUATE THESIS, UNIVERSIDAD DE MURCIA, 2021 &nbsp&nbsp <a href="assets/pdf/TrabajoFindeGrado.pdf" target="_blank"> pdf </a></div>
@@ -101,7 +124,7 @@
                             <div class="subheading mb-0">Participant & Contributed Talk</div>
                             <div>Université de Montréal (UdeM)</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><b>July 2024</b></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">July 2024</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -109,7 +132,7 @@
                             <div class="subheading mb-0">Contributed Talk</div>
                             <div>University of British Columbia (UBC)</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><b>September 2024</b></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">September 2024</span></div>
                     </div>
                 </div>
             </section>
@@ -122,10 +145,37 @@
                         <img alt="..." src="assets/img/MonetGAN.png" width="400" height="300"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           <div class="flex-grow-1">
                               <h3 class="mb-0">	MonetGAN. Painting with Generative Adversarial Networks: Generating Monet-Style Images Using Novel Techniques </h3>
-                              <div class="subheading mb-4"> 2023 &nbsp&nbsp <a href="assets/pdf/MonetGAN_Paper.pdf" target="_blank"> pdf </a> &nbsp&nbsp <a href="https://github.com/begogar99/MonetGAN/" target="_blank"> code </a></div>
+                              <div class="subheading mb-4"> 2023 &nbsp&nbsp <a href="assets/pdf/MonetGAN_Paper.pdf" target="_blank"> pdf </a> &nbsp&nbsp <a href="https://github.com/begogar99/MonetGAN/" target="_blank"> code </a> &nbsp <span class="toggle-trigger-3">Abstract</span></div>
                               <p>Garrett Devereux, Deekshita S. Doli, <b>Begoña García Malaxechebarría</b></p>
                               <p>This project was developed as part of the graduate deep learning class at University of Washington, instructed by Ranjay Krishna and Aditya Kusupati.</p>
                             </div>
+                    </div>
+                    <div class="toggle-wrap-3">
+                        Generative Adversarial Networks (GANs) have emerged
+                        as a powerful and versatile tool for generative modeling.
+                        In recent years, they have gained significant popularity in
+                        various research domains, particularly in image generation, 
+                        enabling researchers to address challenging problems
+                        by generating realistic samples from complex data distributions. 
+                        In the art industry, where tasks often require significant 
+                        investments of time, labor, and creativity, there is a
+                        growing need for more efficient approaches that can streamline 
+                        subsequent project phases. To this end, we present
+                        MonetGAN, a pioneering framework based on the Least
+                        Squares Deep Convolutional CycleGAN, specifically tailored to 
+                        generate images in the distinctive style of 19th-century renowned 
+                        painter Claude Monet. After achieving
+                        non-trivial results with our baseline model, we explore the
+                        integration of advanced techniques and architectures such
+                        as ResNet Generators, a Progressive Growth Mechanism,
+                        Differential Augmentation, and Dual-Objective Discriminators. 
+                        Through our research, we find that we can achieve
+                        superior results with small changes to gradually build up
+                        a successful model, rather than adding too many varying
+                        complexities all at once. These outcomes underscore the intricacies 
+                        involved in the training of GANs, while also opening up promising 
+                        avenues for further advancements at the
+                        intersection of art and artificial intelligence.
                     </div>
                 </div>
             </section>
@@ -136,37 +186,33 @@
                     <h2 class="mb-5">TEACHING</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Teaching Assistant</h3>
-                            <div class="subheading mb-0">MATH 112: Application of Calculus to Business and Economics</div>
-                            <div class="subheading mb-0">MATH 120: Precalculus</div>
-                            <div class="subheading mb-0">MATH 124: Calculus with Analytic Geometry I</div>
-                            <div>University of Washington</div>
+                            <h3 class="mb-0">Teaching Assistant <span class="subheading" style="color: #6c757d !important;">University of Washington</span></h3>
+                            <div>MATH 112: Application of Calculus to Business and Economics</div>
+                            <div>MATH 120: Precalculus</div>
+                            <div>MATH 124: Calculus with Analytic Geometry I</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><b>Fall 2021 - Spring 2023</b></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">Fall 2021 - Spring 2023</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Washington Directed Reading Program Mentor</h3>
-                            <div class="subheading mb-0">Directed an undergraduate’s independent research addressing physical problems involving ODEs</div>
-                            <div>University of Washington</div>
+                            <h3 class="mb-0">Washington Directed Reading Program Mentor <span class="subheading" style="color: #6c757d !important;">University of Washington</span></h3>
+                            <div>Directed an undergraduate’s independent research addressing physical problems involving ODEs</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><b>Winter 2023</b></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">Winter 2023</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Math Tutor</h3>
-                            <div class="subheading mb-0">Guided students to academic excellence in projects, assignments, and university entrance exams</div>
-                            <div>Self-Employed</div>
+                            <h3 class="mb-0">Math Tutor <span class="subheading" style="color: #6c757d !important;">Self-Employed</span></h3>
+                            <div>Guided students to academic excellence in projects, assignments, and university entrance exams</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><b>Summer 2019 - Spring 2021</b></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">Summer 2019 - Spring 2021</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Socio-Educational Volunteer</h3>
-                            <div class="subheading mb-0">Implemented educational support services in English, Spanish, and math aimed at at-risk youth</div>
-                            <div>Fundación FADE</div>
+                            <h3 class="mb-0">Socio-Educational Volunteer <span class="subheading" style="color: #6c757d !important;">Fundación FADE</span></h3>
+                            <div>Implemented educational support services in English, Spanish, and math aimed at at-risk youth</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><b>Fall 2015 - Spring 2018</b></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">Fall 2015 - Spring 2018</span></div>
                     </div>
                 </div>
             </section>
@@ -175,39 +221,70 @@
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy "></i></span>
-                            Top Scholar Award - University of Washington, Fall 2021
-                            <p>Based on strong record and close fit to the department, it exempts the 
-                                recipient from teaching responsibilities for one quarter.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy "></i></span>
-                            Graduated with 21 Honors - Universidad de Murcia, Spring 2021
-                            <p>Academic award granted to the top 5% students in each course that entails a tuition waiver 
-                                for the following year.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy "></i></span>
-                            Collaborative Research Fellowship - Ministry of Education (Spain), Fall 2020
-                            <p>Aimed to facilitate my undergraduate research in "Geometric Lattices" 
-                                with the Differential and Convex Geometry research group of Universidad de Murcia, 
-                                deemed an “Excellency Research Group” by Murcia’s regional government.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy "></i></span>
-                            Dean's List - San Diego State University, Fall 2019 - Spring 2020
-                            <p>Academic recognition for good academic standing, and a term grade point average of 
-                                3.5 in a minimum of 12 graded units.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy "></i></span>
-                            Fellowship for Talented Students - Ministry of Education (Spain), Fall 2017
-                            <p>Awarded to high-achieving students recognized for their outstanding 
-                                academic accomplishments.</p>
-                        </li>
-                    </ul>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Top Scholar Award <span class="subheading" style="color: #6c757d !important;">University of Washington</span></h3>
+                            <div>Based on strong record and close fit to the department, it exempts the 
+                                recipient from teaching responsibilities for one quarter</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">Fall 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Graduated with 21 honor distinctions <span class="subheading" style="color: #6c757d !important;">Universidad de Murcia</span></h3>
+                            <div>Academic award granted to the top 5% students in each course that entails a tuition waiver 
+                                for the following year</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">Spring 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Collaborative Research Fellowship <span class="subheading" style="color: #6c757d !important;">Ministry of Education (Spain)</span></h3>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">Fall 2020</span></div>
+                    </div>
+                    <div class="mb-5">Aimed to facilitate my undergraduate research in "Geometric Lattices" 
+                        with the Differential and Convex Geometry research group of Universidad de Murcia, 
+                        deemed an “Excellency Research Group” by Murcia’s regional government</div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Dean's List <span class="subheading" style="color: #6c757d !important;">San Diego State University</span></h3>
+                            
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">Fall 2019 - Spring 2020</span></div>
+                    </div>
+                    <div class="mb-5">Academic recognition for good academic standing, and a term grade point average of 
+                        3.5 in a minimum of 12 graded units</div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Fellowship for Talented Students <span class="subheading" style="color: #6c757d !important;">Ministry of Education (Spain)</span></h3>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary" style="color: #6c757d !important;">Fall 2017</span></div>
+                    </div>
+                    <div>Awarded to high-achieving students recognized for their outstanding 
+                        academic accomplishments</div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Seminars-->
+            <section class="resume-section" id="seminars">
+                <div class="resume-section-content">
+                    <h2 class="mb-3">Institute for Foundations of Data Science &nbsp&nbsp <img alt="..." src="assets/img/IFDSlogo.png" class="responsive-img"></h2>
+                    <div class="mb-5">The <a href="https://ifds.info" target="_blank"><b>Institute for Foundations of Data Science (IFDS)</b></a>
+                        addresses critical challenges in data science through collaboration among researchers from the Universities of 
+                        Washington, Wisconsin-Madison, California-Santa Cruz, and Chicago. By engaging in research and community 
+                        activities, the IFDS aims to enhance data science methodologies while promoting equity and inclusion.</div>
+
+                    <h3 class="mb-3">Machine Learning and Optimization (ML-OPT) IFDS WEEKLY SEMINAR SERIES <span class="subheading mb-3" style="color: #6c757d !important;">At University of Washington</span></h3>
+                    <div class="mb-2">The IFDS Weekly Seminar is currently co-organized by <b>Begoña García Malaxechebarría</b> 
+                        and Avinandan Bose, and coordinated by <br><a href="https://people.ece.uw.edu/fazel_maryam" target="_blank"><b>Maryam Fazel</b></a>,  
+                        providing an engaging venue for students and postdocs to present their recent research and work in progress.
+                    </div>
+                    <div class="mb-5">
+                        The seminar takes place weekly, both in person and remotely. Below, you can check the Google Calendar for the schedule. 
+                        <br>Additionally, you can join our <a href="https://mailman.cs.washington.edu/mailman/listinfo/ml-opt" target="_blank"><b>mailing list</b></a> for updates (UW login required).
+                    </div>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=c_7d1ba968f0c25eb04def868836fcce61696e3e337b927199894d9a6d0e70a287%40group.calendar.google.com&mode=AGENDA&ctz=America%2FLos_Angeles" width="100%" height="600" scrolling="no"></iframe>
                 </div>
             </section>
         </div>
