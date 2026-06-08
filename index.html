@@ -14,7 +14,6 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body id="page-top">
@@ -50,9 +49,9 @@
                     <div class="subheading mb-5">
 
                     </div>
-                    <p class="lead mb-2">I am a fifth-year Ph.D. student in the Department of Mathematics at the University of Washington, coadvised by
-                    <a href="https://sites.google.com/view/dmitriy-drusvyatskiy/home" target="_blank"><b>Dmitriy Drusvyatskiy</b></a> and <a href="https://cypaquette.github.io" target="_blank"><b>Courtney Paquette</b></a>, and a Research Assistant at the Institute for Foundations of Data Science (IFDS).
-                    I completed my undergraduate degree in Mathematics at Universidad de Murcia in 2021, supervised by <a href="https://webs.um.es/aferr/miwiki/doku.php" target="_blank"><b>Ángel Ferrández</b></a>.</p>
+                    <p class="lead mb-2">I received my Ph.D. in Mathematics from the University of Washington in 2026, coadvised by
+                    <a href="https://sites.google.com/view/dmitriy-drusvyatskiy/home" target="_blank"><b>Dmitriy Drusvyatskiy</b></a> and <a href="https://cypaquette.github.io" target="_blank"><b>Courtney Paquette</b></a>. I was also a Research Assistant at the Institute for Foundations of Data Science (IFDS).
+                    I completed my undergraduate degree in Mathematics at Universidad de Murcia in 2021, under the supervision of <a href="https://webs.um.es/aferr/miwiki/doku.php" target="_blank"><b>Ángel Ferrández</b></a>.</p>
                     <p class="lead mb-2">My research focuses on the mathematical foundations and optimization of machine learning, with particular emphasis on analyzing and scaling limits of stochastic algorithms for large-scale problems in data science. 
                     I apply techniques from convex and non-smooth analysis, high-dimensional probability, and statistics.</p>
                     <p class="lead mb-5"></p>
@@ -129,6 +128,14 @@
                         and therefore are isometric to laminated lattices in those dimensions.
                     </div>
                     <h2 class="mb-5">THESES</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                        <img alt="..." src="assets/img/advisors.png" width="400" height="300"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <div class="flex-grow-1">
+                                    <h3 class="mb-0">	High-dimensional Limit of SGD for Adaptive Stepsize Algorithms and Diagonal Linear Networks </h3>
+                                    <div class="subheading mb-4"> DOCTORAL DISSERTATION, UNIVERSITY OF WASHINGTON, 2026 &nbsp&nbsp <a href="assets/pdf/Begoña_García_Malaxechebarría_s_Dissertation.pdf" target="_blank"> pdf </a></div>
+                                    <p><b>Begoña García Malaxechebarría</b> - advised by Dmitriy Drusvyatskiy and Courtney Paquette</p>
+                            </div>
+                    </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
                         <div class="flex-grow-1">
                                 <h3 class="mb-0">	A separable Banach lattice that contains isometric copies of all others </h3>
@@ -215,6 +222,7 @@
                         </div> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                         <div style="text-align: right;">
                             <br>
+                            <img class="mb-3" alt="..." src="assets/img/talks4.jpeg" width="250" height="250"><br>
                             <img class="mb-3" alt="..." src="assets/img/talks3.jpeg" width="250" height="250"><br>
                             <img class="mb-3" alt="..." src="assets/img/talks2.jpg" width="250" height="250"><br>
                             <img alt="..." src="assets/img/talks1.jpg" width="250" height="250"> 
@@ -227,6 +235,41 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">PROJECT PORTFOLIO</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <img alt="..." src="assets/img/EdgeDeploymentMonitoring.png" width="400" height="300"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Edge Deployment Monitoring: From Cloud Prototyping to Edge Execution</h3>
+                            <div class="subheading mb-4"> 
+                                2025 &nbsp&nbsp 
+                                <a href="https://medium.com/data-science-at-microsoft/edge-deployment-monitoring-from-cloud-prototyping-to-edge-execution-1e16b14a5fd6" target="_blank"> blog </a> 
+                                &nbsp <span class="toggle-trigger" data-toggle="5">Abstract</span>
+                            </div>
+                            <p><b>Begoña García Malaxechebarría</b>, Daniel Ferguson</p>
+                            <p>This project was developed during my summer internship at Microsoft and is featured on the Data Science + AI at Microsoft blog.</p>
+                        </div>
+                    </div>
+                    <div class="toggle-wrap" data-toggle="5" style="display:none;">
+                        Edge deployment monitoring studies how machine learning models behave after being transferred 
+                        from cloud development environments to local edge devices near the data source. In this project, 
+                        we designed a prototype architecture for monitoring edge AI deployments in remote settings, where 
+                        devices may operate with intermittent connectivity and where model performance depends not only on 
+                        predictive quality but also on device-specific constraints such as latency, throughput, and real-time 
+                        inference viability. 
+                        
+                        Our scenario considered radar-based drone-versus-bird detection using synthetic radar signals, 
+                        spectrogram generation, and a computer vision model deployed on an edge device. We focused on 
+                        identifying critical evaluation points across the inference pipeline, including signal processing, 
+                        image preprocessing, and model prediction, in order to benchmark performance and detect potential 
+                        bottlenecks. The project emphasized the importance of distinguishing device-independent metrics, 
+                        such as model version and training accuracy, from device-dependent metrics, such as inference latency 
+                        and throughput. 
+                        
+                        By combining local benchmarking with centralized aggregation of inference reports, the proposed 
+                        workflow enables site-specific insights to inform global model updates and operational decisions. 
+                        The project highlights how systematic monitoring, human-in-the-loop update strategies, and 
+                        performance profiling can support more reliable and scalable edge AI systems in real-world, 
+                        resource-constrained environments.
+                    </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <img alt="..." src="assets/img/MonetGAN.png" width="400" height="300"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                           <div class="flex-grow-1">
